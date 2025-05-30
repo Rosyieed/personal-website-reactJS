@@ -3,7 +3,7 @@ import React from "react";
 const Skills = () => {
   const skills = [
     { name: "HTML/CSS", level: 95, color: "from-orange-400 to-red-500" },
-    { name: "JavaScript", level: 75, color: "from-yellow-400 to-orange-500" },
+    { name: "JavaScript", level: 80, color: "from-yellow-400 to-orange-500" },
     { name: "Bootstrap", level: 90, color: "from-indigo-500 to-purple-500" },
     { name: "Tailwind CSS", level: 80, color: "from-cyan-400 to-blue-500" },
     { name: "React", level: 75, color: "from-blue-400 to-blue-600" },
@@ -11,7 +11,7 @@ const Skills = () => {
     { name: "Laravel", level: 90, color: "from-red-500 to-pink-500" },
     { name: "Express", level: 80, color: "from-green-400 to-green-600" },
     { name: "MySQL", level: 90, color: "from-orange-400 to-yellow-500" },
-    { name: "MongoDB", level: 80, color: "from-green-500 to-emerald-600" },
+    { name: "MongoDB", level: 75, color: "from-green-500 to-emerald-600" },
   ];
 
   const tools = ["VS Code", "Git", "GitHub", "Figma", "Postman", "Prettier"];
@@ -21,11 +21,12 @@ const Skills = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Keahlian
+            Skills & Tools
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-6"></div>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Teknologi dan tools yang saya kuasai dalam pengembangan web modern
+            Technologies and tools I am proficient with in modern web
+            development.
           </p>
         </div>
 
@@ -73,7 +74,7 @@ const Skills = () => {
 
             <div className="mt-12">
               <h4 className="text-xl font-semibold text-white mb-6">
-                Sertifikasi
+                Certifications
               </h4>
               <div className="space-y-4">
                 <div className="bg-slate-800/50 backdrop-blur-sm p-4 rounded-lg border border-slate-700/50">

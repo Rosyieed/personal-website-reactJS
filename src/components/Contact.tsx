@@ -31,12 +31,12 @@ const Contact = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Hubungi Saya
+            Contact Me
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-6"></div>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Mari diskusikan proyek Anda! Saya siap membantu mewujudkan ide
-            digital Anda.
+            I am enthusiastic about collaborating on projects and committed to
+            turning your digital concepts into reality.
           </p>
         </div>
 
@@ -45,12 +45,12 @@ const Contact = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-semibold text-white mb-6">
-                Mari Berkolaborasi
+                Let’s Collaborate
               </h3>
               <p className="text-gray-400 leading-relaxed mb-8">
-                Saya selalu terbuka untuk proyek baru dan peluang kerja sama
-                yang menarik. Jangan ragu untuk menghubungi saya jika Anda
-                memiliki ide yang ingin diwujudkan.
+                I am always open to new projects and exciting collaboration
+                opportunities. Please feel free to contact me if you have ideas
+                you want to bring to life.
               </p>
             </div>
 
@@ -84,7 +84,7 @@ const Contact = () => {
                   <MapPin className="text-white" size={20} />
                 </div>
                 <div>
-                  <p className="text-gray-400 text-sm">Lokasi</p>
+                  <p className="text-gray-400 text-sm">Location</p>
                   <p className="text-white">Bekasi, Indonesia</p>
                 </div>
               </div>
@@ -100,7 +100,7 @@ const Contact = () => {
                     htmlFor="name"
                     className="block text-gray-300 mb-2 font-medium"
                   >
-                    Nama Lengkap
+                    Full Name
                   </label>
                   <input
                     type="text"
@@ -110,7 +110,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors duration-300"
-                    placeholder="Nama Anda"
+                    placeholder="Full Name"
                   />
                 </div>
 
@@ -139,7 +139,7 @@ const Contact = () => {
                   htmlFor="subject"
                   className="block text-gray-300 mb-2 font-medium"
                 >
-                  Subjek
+                  Subject
                 </label>
                 <input
                   type="text"
@@ -149,7 +149,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors duration-300"
-                  placeholder="Topik diskusi"
+                  placeholder="Topic of your message"
                 />
               </div>
 
@@ -158,7 +158,7 @@ const Contact = () => {
                   htmlFor="message"
                   className="block text-gray-300 mb-2 font-medium"
                 >
-                  Pesan
+                  Message
                 </label>
                 <textarea
                   id="message"
@@ -168,7 +168,7 @@ const Contact = () => {
                   required
                   rows={5}
                   className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors duration-300 resize-none"
-                  placeholder="Ceritakan tentang proyek atau ide Anda..."
+                  placeholder="Type your message here..."
                 ></textarea>
               </div>
 
@@ -177,7 +177,7 @@ const Contact = () => {
                 className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 font-medium"
               >
                 <Send size={20} />
-                Kirim Pesan
+                Send Message
               </button>
             </form>
           </div>

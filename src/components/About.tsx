@@ -7,7 +7,7 @@ const About = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Tentang Saya
+            About Me
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto"></div>
         </div>
@@ -15,25 +15,25 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-gray-300 text-lg leading-relaxed">
-              Saya adalah seorang web developer fresh graduate yang antusias
-              dalam membangun solusi digital yang efisien dan mudah digunakan.
-              Selama menjalani program magang selama 1 tahun di industri
-              manufaktur, saya terlibat langsung dalam pengembangan sistem
-              berbasis web yang mendukung proses bisnis internal perusahaan.
+              I am a fresh graduate web developer, enthusiastic about building
+              efficient and user-friendly digital solutions. During a one-year
+              internship in the manufacturing industry, I was directly involved
+              in developing web-based systems that supported the company’s
+              internal business processes.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Keahlian saya mencakup pengembangan front-end dan back-end dengan
-              fokus pada kinerja aplikasi, kemudahan akses, serta pengalaman
-              pengguna yang optimal.
+              My skills include both front-end and back-end development, with a
+              strong focus on application performance, accessibility, and
+              delivering an optimal user experience.
             </p>
             <div className="grid grid-cols-2 gap-6 mt-8">
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-400 mb-2">5+</div>
-                <div className="text-gray-400">Proyek Selesai</div>
+                <div className="text-gray-400">Completed Projects</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-purple-400 mb-2">1</div>
-                <div className="text-gray-400">Tahun Pengalaman</div>
+                <div className="text-gray-400">Years of Experience</div>
               </div>
             </div>
           </div>
@@ -47,8 +47,7 @@ const About = () => {
                 <h3 className="text-xl font-semibold text-white">Clean Code</h3>
               </div>
               <p className="text-gray-400">
-                Menulis kode yang bersih, maintainable, dan mengikuti best
-                practices.
+                Writing clean, maintainable code that follows best practices.
               </p>
             </div>
 
@@ -62,8 +61,7 @@ const About = () => {
                 </h3>
               </div>
               <p className="text-gray-400">
-                Menciptakan interface yang intuitif dan pengalaman pengguna yang
-                menyenangkan.
+                Creating intuitive interfaces and enjoyable user experiences.
               </p>
             </div>
 
@@ -77,8 +75,8 @@ const About = () => {
                 </h3>
               </div>
               <p className="text-gray-400">
-                Mengoptimalkan performa aplikasi untuk pengalaman yang cepat dan
-                responsif.
+                Optimizing application performance for fast and responsive user
+                experiences.
               </p>
             </div>
           </div>

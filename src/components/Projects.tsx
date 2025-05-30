@@ -21,7 +21,7 @@ const Projects = () => {
     {
       title: "Limbah Connect",
       description:
-        "Limbah Connect merupakan Sistem Manajemen Pengelolaan Penjualan Limbah Berbasis Web untuk memudahkan pengelolaan penjualan limbah di PT Kalbe Morinaga Indonesia.",
+        "Limbah Connect is a web-based Waste Sales Management System designed to facilitate the management of waste sales at PT Kalbe Morinaga Indonesia.",
       image: "/assets/projects/Limbah Connect/limbah logo.png",
       images: [
         "/assets/projects/Limbah Connect/limbah logo.png",
@@ -47,7 +47,7 @@ const Projects = () => {
     {
       title: "KMI Ergonomic System Web",
       description:
-        "Aplikasi web fullstack untuk menampilkan hasil analisis postur kerja secara real-time dari API eksternal (RULA, REBA, NIOSH), dilengkapi dengan panel admin, manajemen data, dan modul laporan ergonomi.",
+        "A fullstack web application that displays real-time work posture analysis results from external APIs (RULA, REBA, NIOSH), equipped with an admin panel, data management, and ergonomic reporting modules.",
       image: "/assets/projects/ergonomic/ergonomic logo.png",
       images: [
         "/assets/projects/ergonomic/ergonomic logo.png",
@@ -70,7 +70,7 @@ const Projects = () => {
     {
       title: "FA Library",
       description:
-        "FA Library adalah aplikasi web internal untuk membantu tim Finance & Accounting PT Kalbe Morinaga Indonesia dalam memantau laporan keuangan bulanan, tahunan, dan pengeluaran operasional melalui visualisasi data yang interaktif dan informatif.",
+        "FA Library is an internal web application designed to assist the Finance & Accounting team at PT Kalbe Morinaga Indonesia in monitoring monthly and annual financial reports, as well as operational expenses.",
       image: "/assets/projects/FA Library/falibrary 5.png",
       images: [
         "/assets/projects/FA Library/falibrary 5.png",
@@ -94,7 +94,7 @@ const Projects = () => {
     {
       title: "Laundry Management System",
       description:
-        "Laundry Management System adalah aplikasi web untuk mengelola operasional laundry, mulai dari pencatatan hingga pelacakan status order, dengan dukungan multi-role seperti admin, penyetrika, pembungkus, dan super admin.",
+        "Laundry Management System is a web application designed to manage laundry operations, from record-keeping to order status tracking, supporting multiple roles such as admin, ironer, packer, and super admin.",
       image: "/assets/projects/Laundry/laundry 1.png",
       images: [
         "/assets/projects/Laundry/laundry 1.png",
@@ -124,12 +124,11 @@ const Projects = () => {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Proyek Terbaru
+            Recent Projects
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-6"></div>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Beberapa proyek yang telah saya kerjakan menggunakan teknologi
-            modern
+            A selection of projects I have completed using modern technologies.
           </p>
         </div>
 

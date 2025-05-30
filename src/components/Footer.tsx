@@ -26,8 +26,8 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-400 leading-relaxed">
-              Mengembangkan solusi web yang inovatif dan berkualitas tinggi
-              untuk membantu bisnis Anda berkembang di era digital.
+              Developing innovative, high-quality web solutions to help your
+              business thrive in the digital era.
             </p>
           </div>
 
@@ -111,7 +111,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-gray-400 text-sm">
-              Mari terhubung dan berkolaborasi untuk proyek yang menginspirasi!
+              Let’s connect and collaborate on inspiring projects!
             </p>
           </div>
         </div>

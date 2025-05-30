@@ -47,20 +47,19 @@ const Hero = () => {
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in">
-          Menciptakan pengalaman web yang{" "}
+          Providing web solutions that are{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
             modern
           </span>{" "}
-          dan{" "}
+          and{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-            inovatif
+            innovative
           </span>
         </p>
 
         <p className="text-gray-400 mb-12 max-w-2xl mx-auto animate-fade-in">
-          Saya adalah seorang web developer yang berpengalaman dalam membangun
-          aplikasi web responsif dan user-friendly menggunakan teknologi
-          terkini.
+          I am an experienced web developer specializing in building responsive
+          and user-friendly web applications using modern technologies.
         </p>
 
         {/* Dropdown Download CV + Hubungi Saya */}
@@ -74,7 +73,9 @@ const Hero = () => {
               aria-expanded={dropdownOpen}
             >
               <Download size={20} />
-              {selectedCv === "/assets/cv/CV - IDN" ? "Download CV" : "Download CV"}
+              {selectedCv === "/assets/cv/CV - IDN"
+                ? "Download CV"
+                : "Download CV"}
               <ChevronDown size={16} />
             </button>
 
@@ -107,7 +108,7 @@ const Hero = () => {
             onClick={(e) => handleSmoothScroll(e, "#contact")}
             className="border border-gray-400 hover:border-white text-gray-300 hover:text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
           >
-            Hubungi Saya
+            Contact Me
           </a>
         </div>
 
