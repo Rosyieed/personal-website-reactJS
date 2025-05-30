@@ -24,7 +24,7 @@ const Hero = () => {
           <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 p-1">
             <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
               <img
-                src="public/foto-formal.png"
+                src="/foto-formal.png"
                 alt="Logo"
                 className="w-full h-full object-cover rounded-full"
               />
@@ -55,7 +55,7 @@ const Hero = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in">
           <a
-            href="/public/foto-formal.png"
+            href="/foto-formal.png"
             download
             className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
           >
