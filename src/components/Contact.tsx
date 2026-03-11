@@ -22,7 +22,7 @@ const Contact = () => {
     e.preventDefault();
     console.log("Form submitted:", formData);
     // Handle form submission here
-    alert("Pesan berhasil dikirim! Saya akan segera menghubungi Anda.");
+    alert("Message sent successfully! I will get back to you soon.");
     setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
@@ -33,7 +33,7 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Contact Me
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto mb-6"></div>
           <p className="text-gray-400 max-w-2xl mx-auto">
             I am enthusiastic about collaborating on projects and committed to
             turning your digital concepts into reality.
@@ -80,7 +80,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-gradient-to-r from-purple-400 to-purple-600 rounded-lg flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-indigo-400 to-indigo-600 rounded-lg flex items-center justify-center mr-4">
                   <MapPin className="text-white" size={20} />
                 </div>
                 <div>
@@ -92,7 +92,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-slate-800/50 backdrop-blur-sm p-8 rounded-xl border border-slate-700/50">
+          <div className="bg-slate-900 p-8 rounded-xl border border-slate-800">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
@@ -174,7 +174,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 font-medium"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 font-medium shadow-lg shadow-blue-500/20"
               >
                 <Send size={20} />
                 Send Message

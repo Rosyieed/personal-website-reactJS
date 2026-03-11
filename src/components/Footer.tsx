@@ -21,7 +21,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="text-2xl font-bold text-white mb-4">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
                 Rosyid Eko Nugroho
               </span>
             </div>
@@ -105,7 +105,7 @@ const Footer = () => {
               </a>
               <a
                 href="mailto:rosyid123.ren@gmail.com"
-                className="w-10 h-10 bg-slate-700 hover:bg-purple-600 rounded-lg flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300"
+                className="w-10 h-10 bg-slate-700 hover:bg-blue-600 rounded-lg flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300"
               >
                 <Mail size={20} />
               </a>
@@ -119,7 +119,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-slate-700/50 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © 2025 Rosyid Eko Nugroho. All rights reserved.
+            © 2026 Rosyid Eko Nugroho. All rights reserved.
           </p>
           <div className="flex items-center text-gray-400 text-sm">
             <span>Made with</span>

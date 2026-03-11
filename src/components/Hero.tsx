@@ -31,7 +31,7 @@ const Hero = () => {
     >
       <div className="text-center max-w-4xl mx-auto">
         <div className="mb-8 animate-fade-in">
-          <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 p-1">
+          <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 p-1">
             <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
               <img
                 src="/foto-formal.png"
@@ -43,23 +43,23 @@ const Hero = () => {
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
-          Web Developer
+          Full Stack Developer
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in">
-          Providing web solutions that are{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+          Providing solutions that are{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
             modern
           </span>{" "}
           and{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
             innovative
           </span>
         </p>
 
         <p className="text-gray-400 mb-12 max-w-2xl mx-auto animate-fade-in">
-          I am an experienced web developer specializing in building responsive
-          and user-friendly web applications using modern technologies.
+          I am an experienced full stack developer specializing in building responsive
+          and user-friendly applications using modern technologies.
         </p>
 
         {/* Dropdown Download CV + Hubungi Saya */}
@@ -68,7 +68,7 @@ const Hero = () => {
           <div className="relative">
             <button
               onClick={toggleDropdown}
-              className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center gap-2 shadow-lg shadow-blue-500/20"
               aria-haspopup="true"
               aria-expanded={dropdownOpen}
             >
