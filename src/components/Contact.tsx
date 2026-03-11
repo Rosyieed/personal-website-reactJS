@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -29,7 +30,13 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 px-6 bg-slate-800/30">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Contact Me
           </h2>
@@ -38,11 +45,17 @@ const Contact = () => {
             I am enthusiastic about collaborating on projects and committed to
             turning your digital concepts into reality.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
-          <div className="space-y-8">
+          <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6 }}
+            className="space-y-8"
+          >
             <div>
               <h3 className="text-2xl font-semibold text-white mb-6">
                 Let’s Collaborate
@@ -89,10 +102,16 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Contact Form */}
-          <div className="bg-slate-900 p-8 rounded-xl border border-slate-800">
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6 }}
+            className="bg-slate-900 p-8 rounded-xl border border-slate-800"
+          >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
@@ -180,7 +199,7 @@ const Contact = () => {
                 Send Message
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

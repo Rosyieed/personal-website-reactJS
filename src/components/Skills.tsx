@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const skillCategories = {
@@ -18,7 +19,7 @@ const Skills = () => {
       { name: "Laravel", color: "from-red-500 to-orange-600" },
       { name: "Express", color: "from-gray-700 to-slate-900" },
       { name: "Node.js", color: "from-green-500 to-emerald-700" },
-      { name: ".Net", color: "from-cyan-400 to-sky-500" },
+      { name: ".NET", color: "from-cyan-400 to-sky-500" },
     ],
     Database: [
       { name: "MySQL", color: "from-blue-500 to-orange-400" },
@@ -33,7 +34,13 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20 px-6 bg-slate-800/30">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Skills & Tools
           </h2>
@@ -41,11 +48,16 @@ const Skills = () => {
           <p className="text-gray-400 max-w-2xl mx-auto">
             Technologies and tools I am proficient with in modern development.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Technical Skills */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6 }}
+          >
             <h3 className="text-2xl font-semibold text-white mb-8">
               Technical Skills
             </h3>
@@ -75,10 +87,15 @@ const Skills = () => {
                 ),
               )}
             </div>
-          </div>
+          </motion.div>
 
           {/* Tools & Technologies */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6 }}
+          >
             <h3 className="text-2xl font-semibold text-white mb-8">
               Tools & Technologies
             </h3>
@@ -122,7 +139,7 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

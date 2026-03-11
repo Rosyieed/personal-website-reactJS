@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Github, Linkedin, Mail, Download, ChevronDown } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const [selectedCv, setSelectedCv] = useState("/cv-indonesia.pdf");
@@ -7,7 +8,7 @@ const Hero = () => {
 
   const handleSmoothScroll = (
     e: React.MouseEvent<HTMLAnchorElement>,
-    href: string
+    href: string,
   ) => {
     e.preventDefault();
     const id = href.replace("#", "");
@@ -30,7 +31,12 @@ const Hero = () => {
       className="min-h-screen flex items-center justify-center px-6 pt-16"
     >
       <div className="text-center max-w-4xl mx-auto">
-        <div className="mb-8 animate-fade-in">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="mb-8"
+        >
           <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 p-1">
             <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
               <img
@@ -40,13 +46,23 @@ const Hero = () => {
               />
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
+        <motion.h1 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="text-5xl md:text-7xl font-bold text-white mb-6"
+        >
           Full Stack Developer
-        </h1>
+        </motion.h1>
 
-        <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in">
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-xl md:text-2xl text-gray-300 mb-8"
+        >
           Providing solutions that are{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
             modern
@@ -55,53 +71,34 @@ const Hero = () => {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
             innovative
           </span>
-        </p>
+        </motion.p>
 
-        <p className="text-gray-400 mb-12 max-w-2xl mx-auto animate-fade-in">
-          I am an experienced full stack developer specializing in building responsive
-          and user-friendly applications using modern technologies.
-        </p>
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="text-gray-400 mb-12 max-w-2xl mx-auto"
+        >
+          I am an experienced full stack developer specializing in building
+          responsive and user-friendly applications using modern technologies.
+        </motion.p>
 
         {/* Dropdown Download CV + Hubungi Saya */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in relative">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 relative"
+        >
           {/* Dropdown tombol */}
-          <div className="relative">
-            <button
-              onClick={toggleDropdown}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center gap-2 shadow-lg shadow-blue-500/20"
-              aria-haspopup="true"
-              aria-expanded={dropdownOpen}
-            >
-              <Download size={20} />
-              {selectedCv === "/assets/cv/CV - IDN"
-                ? "Download CV"
-                : "Download CV"}
-              <ChevronDown size={16} />
-            </button>
-
-            {dropdownOpen && (
-              <div className="absolute mt-2 right-0 w-44 rounded-md shadow-lg bg-slate-900 border border-slate-700 ring-1 ring-black ring-opacity-5 z-50">
-                <div className="py-1">
-                  <a
-                    href="/assets/cv/CV - IDN.pdf"
-                    download
-                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-blue-600 hover:text-white cursor-pointer"
-                    onClick={() => selectCv("/CV - IDN")}
-                  >
-                    Download IDN CV
-                  </a>
-                  <a
-                    href="/assets/cv/CV - ENG.pdf"
-                    download
-                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-blue-600 hover:text-white cursor-pointer"
-                    onClick={() => selectCv("/CV - ENG.pdf")}
-                  >
-                    Download ENG CV
-                  </a>
-                </div>
-              </div>
-            )}
-          </div>
+          <a
+            href="/assets/cv/CV - ROSYID EKO NUGROHO.pdf"
+            download
+            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center gap-2 shadow-lg shadow-blue-500/20"
+          >
+            <Download size={20} />
+            Download CV
+          </a>
 
           <a
             href="#contact"
@@ -110,9 +107,14 @@ const Hero = () => {
           >
             Contact Me
           </a>
-        </div>
+        </motion.div>
 
-        <div className="flex justify-center space-x-6 animate-fade-in">
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          className="flex justify-center space-x-6"
+        >
           <a
             href="https://github.com/Rosyieed"
             target="_blank"
@@ -135,7 +137,7 @@ const Hero = () => {
           >
             <Mail size={24} />
           </a>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

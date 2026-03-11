@@ -1,5 +1,6 @@
 import React from "react";
 import { Github, ExternalLink, X, Lock } from "lucide-react";
+import { motion } from "framer-motion";
 import {
   Carousel,
   CarouselContent,
@@ -339,7 +340,13 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 px-6">
       <div className="container mx-auto max-w-7xl">
-        <div className="text-center mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Recent Projects
           </h2>
@@ -347,7 +354,7 @@ const Projects = () => {
           <p className="text-gray-400 max-w-2xl mx-auto">
             A selection of projects I have completed using modern technologies.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {visibleProjects.map((project, index) => (
@@ -356,7 +363,13 @@ const Projects = () => {
                 asChild
                 onClick={() => setSelectedProject(project)}
               >
-                <div className="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-blue-500/50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-900/20 group cursor-pointer flex flex-col h-full">
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-blue-500/50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-900/20 group cursor-pointer flex flex-col h-full"
+                >
                   <div className="relative overflow-hidden h-48">
                     <img
                       src={project.image}
@@ -410,7 +423,7 @@ const Projects = () => {
                       )}
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </DialogTrigger>
 
               {selectedProject && selectedProject.title === project.title && (
