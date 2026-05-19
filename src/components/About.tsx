@@ -27,8 +27,8 @@ const About = () => {
             className="space-y-6"
           >
             <p className="text-gray-300 text-lg leading-relaxed">
-              Hi! I'm Rosyid, a passionate web developer dedicated to
-              transforming complex ideas into functional digital solutions.
+              Hi! I'm Rosyid Eko Nugroho, a passionate web developer dedicated
+              to transforming complex ideas into functional digital solutions.
               Through my professional experience in the manufacturing and
               distribution industries, I have successfully developed various
               enterprise level systems designed to optimize and streamline

@@ -1,11 +1,8 @@
-import React, { useState } from "react";
-import { Github, Linkedin, Mail, Download, ChevronDown } from "lucide-react";
+import React from "react";
+import { Github, Linkedin, Mail, Download } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Hero = () => {
-  const [selectedCv, setSelectedCv] = useState("/cv-indonesia.pdf");
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
   const handleSmoothScroll = (
     e: React.MouseEvent<HTMLAnchorElement>,
     href: string,
@@ -16,13 +13,6 @@ const Hero = () => {
     if (el) {
       el.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  };
-
-  const toggleDropdown = () => setDropdownOpen((open) => !open);
-
-  const selectCv = (cvPath: string) => {
-    setSelectedCv(cvPath);
-    setDropdownOpen(false);
   };
 
   return (
@@ -41,7 +31,7 @@ const Hero = () => {
             <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
               <img
                 src="/foto-formal.png"
-                alt="Logo"
+                alt="Rosyid Eko Nugroho"
                 className="w-full h-full object-cover rounded-full"
               />
             </div>
@@ -54,8 +44,17 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-5xl md:text-7xl font-bold text-white mb-6"
         >
-          Full Stack Developer
+          Rosyid Eko Nugroho
         </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.15 }}
+          className="text-2xl md:text-3xl font-semibold text-blue-100 mb-4"
+        >
+          Full Stack Developer
+        </motion.p>
 
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
